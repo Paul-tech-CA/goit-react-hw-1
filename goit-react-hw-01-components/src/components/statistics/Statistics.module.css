@@ -17,7 +17,7 @@
   padding-top: 30px;
 }
 
-.stat-list {
+.statList {
   display: flex;
   list-style: none;
   width: 300px;

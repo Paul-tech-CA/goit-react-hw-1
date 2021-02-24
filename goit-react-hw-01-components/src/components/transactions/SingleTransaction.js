@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./TransactionHistory.css";
 
 const SingleTransaction = ({ type, amount, currency }) => {
   return (

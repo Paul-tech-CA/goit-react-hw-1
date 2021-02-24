@@ -1,11 +1,11 @@
 import React from "react";
 import Afriend from "./Afriend";
 import PropTypes from "prop-types";
-import "./FriendList.css";
+import style from "./FriendList.module.css";
 
 export default function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <ul className={style.friendList}>
       {friends.map((friend) => (
         <Afriend key={friend.id} {...friend} />
       ))}

@@ -1,4 +1,4 @@
-.friend-list {
+.friendList {
   width: 400px;
   height: 400px;
   border-radius: 15px;
@@ -8,7 +8,7 @@
   /* text-align: center; */
 }
 
-.friend-list .item {
+.friendList .item {
   width: 400px;
   display: flex;
   margin-bottom: 10px;
@@ -16,7 +16,7 @@
   /* flex-direction: row-reverse; */
 }
 
-.friend-list .avatar {
+.friendList .avatar {
   border-radius: 10%;
   height: 70px;
   margin-right: 30px;

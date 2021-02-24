@@ -6,18 +6,20 @@ import FriendList from "./friends/FriendList";
 import TransactionHistory from "./transactions/TransactionHistory";
 
 const App = () => {
+  const { user, friends, transactions, statisticalData } = data;
   return (
     <div>
       <Profile
-        name={data.user.name}
-        tag={data.user.tag}
-        location={data.user.location}
-        avatar={data.user.avatar}
-        stats={data.user.stats}
+        {...user}
+        // name={user.name}
+        // tag={user.tag}
+        // location={user.location}
+        // avatar={user.avatar}
+        // stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data.statisticalData} />
-      <FriendList friends={data.friends} />
-      <TransactionHistory items={data.transactions} />
+      <Statistics title="Upload stats" stats={statisticalData} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };

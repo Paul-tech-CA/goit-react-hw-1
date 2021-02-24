@@ -1,11 +1,11 @@
 import React from "react";
 import SingleTransaction from "./SingleTransaction";
 import PropTypes from "prop-types";
-import "./TransactionHistory.css";
+import style from "./TransactionHistory.module.css";
 
 export default function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={style.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>

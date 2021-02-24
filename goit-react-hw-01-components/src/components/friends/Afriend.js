@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./FriendList.css";
+import style from "./FriendList.module.css";
 
 const Afriend = ({ avatar, name, isOnline }) => {
   return (
-    <li className="item">
-      <span className={isOnline ? "online" : "offline"}></span>
-      <img className="avatar" src={avatar} alt="" width="48" />
-      <p className="name">{name}</p>
+    <li className={style.item}>
+      <span className={isOnline ? style.online : style.offline}></span>
+      <img className={style.avatar} src={avatar} alt="" width="48" />
+      <p className={style.name}>{name}</p>
     </li>
   );
 };
@@ -20,7 +20,7 @@ Afriend.defaultProps = {
 
 Afriend.propTypes = {
   isOnline: PropTypes.bool.isRequired,
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   name: PropTypes.string.isRequired,
 };
 

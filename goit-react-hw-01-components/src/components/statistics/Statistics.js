@@ -1,15 +1,15 @@
 import React from "react";
 import Sitem from "./Sitem";
 import PropTypes from "prop-types";
-import "./Statistics.css";
+import style from "./Statistics.module.css";
 
 export default function Statistics({ title, stats }) {
   return (
     <div>
-      <section className="statistics">
-        <h2 className="title">{title}</h2>
+      <section className={style.statistics}>
+        <h2 className={style.title}>{title}</h2>
 
-        <ul className="stat-list">
+        <ul className={style.statList}>
           {stats.map((item) => (
             <Sitem key={item.id} {...item} />
           ))}
